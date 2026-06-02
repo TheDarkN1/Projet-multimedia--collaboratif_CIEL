@@ -27,8 +27,8 @@ apt update
 apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 ```
-
-## Création du dossier du projet ou sera Navidrome 
+## Création des dossier systeme
+#### Création du dossier du projet ou sera Navidrome 
 
 ```bash
 mkdir -p /opt/navidrome 
