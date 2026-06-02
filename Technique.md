@@ -31,8 +31,8 @@ apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 #### Création du dossier du projet ou sera Navidrome 
 
 ```bash
-mkdir -p /opt/navidrome 
-cd /opt/navidrome
+mkdir -p /opt/Navidrome 
+cd /opt/Navidrome
 ```
 
 #### Création du dossier du projet ou sera Calibre
