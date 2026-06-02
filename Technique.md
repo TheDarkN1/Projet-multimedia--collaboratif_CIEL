@@ -1,6 +1,6 @@
-## 🛠️ Partie Technique
+# 🛠️ Partie Technique
 
-### 🖥️ Préparation de l'infrastructure pour toutes les VMs
+## 🖥️ Préparation de l'infrastructure pour toutes les VMs
 
 #### Installation de Docker
 
@@ -28,7 +28,7 @@ apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 
 ```
 
-#### Création du dossier du projet ou sera Navidrome 
+## Création du dossier du projet ou sera Navidrome 
 
 ```bash
 mkdir -p /opt/navidrome 
