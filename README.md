@@ -1,6 +1,11 @@
 # Projet-serveur-multimedia-et-collaboratif-CIEL
 # 🎬 Projet Serveur Multimédia et Collaboratif
 
+## 🛠️ Documentation
+
+- 📖 [Présentation du projet](README.md)
+- 🛠️ [Partie Technique](Technique.md)
+
 # Explication 
 
 ## 📖 Présentation
