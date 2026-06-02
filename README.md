@@ -1,4 +1,4 @@
-# Projet-serveur-multim-dia-et-collaboratif-CIEL
+# Projet-serveur-multimedia-et-collaboratif-CIEL
 # 🎬 Projet Serveur Multimédia et Collaboratif
 
 ## 📖 Présentation
