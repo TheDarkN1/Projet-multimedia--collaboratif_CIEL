@@ -62,3 +62,8 @@ cd /opt/Nextcloud
 mkdir -p /opt/OnlyOffice 
 cd /opt/OnlyOffice
 ```
+
+## Déploiement avec Docker Compose 
+
+####Navidrome
+
