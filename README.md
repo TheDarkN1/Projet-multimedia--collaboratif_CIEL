@@ -123,24 +123,37 @@ apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 #### Création du dossier du projet ou sera Navidrome 
 
 ```bash
-mkdir -p /opt/service 
+mkdir -p /opt/navidrome 
 cd /opt/navidrome
 ```
 
 #### Création du dossier du projet ou sera Calibre
 
-
+```bash
+mkdir -p /opt/Calibre 
+cd /opt/Calibre
+```
 
 #### Création du dossier du projet ou sera Jellyfin
 
-
+```bash
+mkdir -p /opt/Jellyfin 
+cd /opt/Jellyfin
+```
 
 #### Création du dossier du projet ou sera Nextcloud
 
+```bash
+mkdir -p /opt/Nextcloud 
+cd /opt/Nextcloud
+```
 
 #### Création du dossier du projet ou sera OnlyOffice 
 
-
+```bash
+mkdir -p /opt/OnlyOffice 
+cd /opt/OnlyOffice
+```
 
 
 
