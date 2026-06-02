@@ -2,7 +2,8 @@
 
 ## 🖥️ Préparation de l'infrastructure pour toutes les VMs
 
-# Pour les dossiers ou seront stocker les medias (contenue) sur Jellyfin, Calibre-Web et Navirdome ce reporter au dossier Stockage
+# Les dossiers contenant les médias utilisés par Jellyfin, Calibre-Web et Navidrome sont détaillés dans la section ` Stockage `
+
 
 #### Installation de Docker
 
