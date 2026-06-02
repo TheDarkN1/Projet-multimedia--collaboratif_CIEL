@@ -2,6 +2,8 @@
 
 ## 🖥️ Préparation de l'infrastructure pour toutes les VMs
 
+# Pour les dossiers ou seront stocker les medias (contenue) sur Jellyfin, Calibre-Web et Navirdome ce reporter au dossier Stockage
+
 #### Installation de Docker
 
 ```bash
@@ -65,5 +67,39 @@ cd /opt/OnlyOffice
 
 ## Déploiement avec Docker Compose 
 
-#### Navidrome
+### Navidrome
+## Ce mettre dans le dossier de Navidrome
 
+```bash
+cd /opt/Navidrome
+```
+
+## Puis crée le `docker-compose.yml`
+
+```bash
+nano /opt/Navidrome/docker-compose.yml
+```
+
+## Et copier le contenue
+
+```bash
+
+services:
+  navidrome:
+    image: deluan/navidrome:latest
+    container_name: navidrome
+    restart: unless-stopped
+
+    ports:
+      - "4533:4533"
+
+    environment:
+      ND_SCANSCHEDULE: 1h
+      ND_WATCHFOLDER: "true"
+
+    volumes:
+      - /srv/navidrome/data:/data
+      - /mnt/music:/music:ro
+
+
+```
