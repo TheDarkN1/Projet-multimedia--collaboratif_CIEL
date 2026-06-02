@@ -47,6 +47,7 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
 - Authentification des utilisateurs
 - Accès sécurisé via HTTPS
+- Reverse proxy (Pangolin 0 trust)
 - Gestion des droits d'accès
 - Sauvegarde des données importantes
 
