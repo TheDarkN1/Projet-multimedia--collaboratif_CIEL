@@ -4,6 +4,7 @@
 
 - 📖 [Présentation du projet](README.md)
 - 🛠️ [Partie Technique](Technique.md)
+- 📁 [Stockage](Stockage.md)
 
 # Explication 
 
