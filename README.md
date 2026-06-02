@@ -55,7 +55,7 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
 ## 📸 Captures d'écran
 
-### 🏠 Accueil
+### 🏠 Proxmox
 ![Accueil](screenshots/home.png)
 
 ### 🎵 Navidrome
