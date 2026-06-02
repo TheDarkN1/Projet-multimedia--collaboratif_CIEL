@@ -79,10 +79,11 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 - 📚 Calibre-Web
 - 📝 OnlyOffice
 - 📊 Uptime Kuma
+- 🌐 Pangolin
 
 ---
 
 ## 👨‍💻 Auteur
 
-Projet réalisé dans le cadre de ma formation en **Bac Professionnel CIEL**.
+Projet réalisé dans le cadre de ma formation en **Bac Professionnel CIEL** by nnonno_917 / ibv_781 / Roi Du Feu.
 
