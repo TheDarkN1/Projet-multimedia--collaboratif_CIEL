@@ -92,7 +92,7 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
 ## 🛠️ Partie Technique
 
-### 🖥️ Préparation de l'infrastructure
+### 🖥️ Préparation de l'infrastructure pour toutes les VMs
 
 #### Installation de Docker
 
@@ -120,12 +120,31 @@ apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 
 ```
 
-### Création du dossier du projet ou sera Navidrome 
+#### Création du dossier du projet ou sera Navidrome 
 
 ```bash
-mkdir -p /opt/navidrome
+mkdir -p /opt/service 
 cd /opt/navidrome
 ```
+
+#### Création du dossier du projet ou sera Calibre
+
+
+
+#### Création du dossier du projet ou sera Jellyfin
+
+
+
+#### Création du dossier du projet ou sera Nextcloud
+
+
+#### Création du dossier du projet ou sera OnlyOffice 
+
+
+
+
+
+
 
 
 
