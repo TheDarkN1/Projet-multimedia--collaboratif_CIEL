@@ -12,7 +12,7 @@
 
 Ce projet a pour objectif de mettre en place des services numérique permettant de centraliser différents services utiles au quotidien.
 
-L'objectif est de proposer un espace unique permettant d'accéder à ses médias, ses documents et ses livres numériques tout en facilitant le partage et la collaboration entre utilisateurs.
+Le but est de proposer un espace unique permettant d'accéder à ses médias, ses documents et ses livres numériques tout en facilitant le partage et la collaboration entre utilisateurs.
 
 ---
 
@@ -37,7 +37,7 @@ Outil de supervision permettant de vérifier la disponibilité des différents s
 
 ## 🎯 Objectifs du projet
 
-- Centraliser plusieurs services sur une même infrastructure
+- Centraliser plusieurs services sur une même infrastructure (Proxmox)
 - Faciliter l'accès aux contenus numériques
 - Permettre le partage sécurisé des fichiers
 - Favoriser le travail collaboratif
@@ -67,6 +67,12 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
 ### 📚 Calibre-Web
 ![Calibre-Web](screenshots/calibre.png)
+
+### 📈 UptimeKuma
+![UptimeKuma](screenshots/uptimekuma.png)
+
+### 🌍 Nginx Proxy Manager
+![Nginx Proxy Manager](screenshots/npm.png)
 
 ---
 
