@@ -2,7 +2,7 @@
 
 ## 🖥️ Préparation de l'infrastructure pour toutes les VMs
 
-# Les dossiers contenant les médias utilisés par Jellyfin, Calibre-Web et Navidrome sont détaillés dans la section ` Stockage `
+# 📝 Notes : Les dossiers contenant les médias utilisés par Jellyfin, Calibre-Web et Nextcloud, la mise en place sera détaillés dans la section ` Stockage `
 
 - 📖 [Présentation du projet](README.md)
 - 🛠️ [Partie Technique](Technique.md)
