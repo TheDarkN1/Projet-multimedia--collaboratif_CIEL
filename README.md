@@ -10,7 +10,7 @@
 
 ## 📖 Présentation
 
-Ce projet a pour objectif de mettre en place une plateforme numérique permettant de centraliser différents services utiles au quotidien.
+Ce projet a pour objectif de mettre en place des services numérique permettant de centraliser différents services utiles au quotidien.
 
 L'objectif est de proposer un espace unique permettant d'accéder à ses médias, ses documents et ses livres numériques tout en facilitant le partage et la collaboration entre utilisateurs.
 
@@ -20,9 +20,6 @@ L'objectif est de proposer un espace unique permettant d'accéder à ses médias
 
 ### 🎥 Jellyfin
 Serveur multimédia permettant de regarder des films, séries et vidéos depuis n'importe quel appareil connecté.
-
-### 🎵 Navidrome
-Plateforme de streaming musical personnelle permettant d'écouter sa bibliothèque musicale en ligne.
 
 ### ☁️ Nextcloud
 Espace de stockage et de partage de fichiers accessible à distance.
@@ -54,7 +51,7 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
 - Authentification des utilisateurs
 - Accès sécurisé via HTTPS
-- Reverse proxy (Pangolin 0 trust)
+- Reverse proxy (Nginix Proxy Manager)
 - Gestion des droits d'accès
 - Sauvegarde des données importantes
 
@@ -64,9 +61,6 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
 ### 🏠 Proxmox
 ![Proxmox](screenshots/home.png)
-
-### 🎵 Navidrome
-![Navidrome](screenshots/navidrome.png)
 
 ### ☁️ Nextcloud
 ![Nextcloud](screenshots/nextcloud.png)
@@ -82,11 +76,9 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 - 🐳 Docker
 - ☁️ Nextcloud
 - 🎥 Jellyfin
-- 🎵 Navidrome
 - 📚 Calibre-Web
 - 📝 OnlyOffice
 - 📊 Uptime Kuma
-- 🌐 Pangolin
 
 ---
 
