@@ -34,12 +34,8 @@ apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 
 ```
 ## Création des dossier systeme
-#### Création du dossier du projet ou sera Navidrome 
 
-```bash
-mkdir -p /opt/Navidrome 
-cd /opt/Navidrome
-```
+
 
 #### Création du dossier du projet ou sera Calibre
 
@@ -71,39 +67,7 @@ cd /opt/OnlyOffice
 
 ## Déploiement avec Docker Compose 
 
-### Navidrome
-## Ce mettre dans le dossier de Navidrome
 
-```bash
-cd /opt/Navidrome
-```
-
-## Puis crée le `docker-compose.yml`
-
-```bash
-nano /opt/Navidrome/docker-compose.yml
-```
-
-## Et copier le contenue
-
-```bash
-
-services:
-  navidrome:
-    image: deluan/navidrome:latest
-    container_name: navidrome
-    restart: unless-stopped
-
-    ports:
-      - "4533:4533"
-
-    environment:
-      ND_SCANSCHEDULE: 1h
-      ND_WATCHFOLDER: "true"
-
-    volumes:
-      - /srv/navidrome/data:/data
-      - /mnt/music:/music:ro
 
 
 ```
