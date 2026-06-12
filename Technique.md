@@ -176,9 +176,11 @@ Créer deux conteneurs LXC sous Proxmox pour héberger :
 
 ---
 
-## ⚙️ Création des conteneurs LXC (Proxmox)
+## ⚙️ Création des conteneurs LXC debian 12 (Proxmox)
 
-### 📦 Uptime Kuma
+### 📦 Uptime Kuma 
+
+### À exécuter dans le shell de Proxmox
 
 ```bash
 pct create 200 local:vztmpl/debian-12-standard_*.tar.zst \
@@ -208,7 +210,7 @@ pct create 201 local:vztmpl/debian-12-standard_*.tar.zst \
 
 ---
 
-## 🚀 Démarrer les conteneurs (dans le shell de proxmox ou dans l'interface web)
+## 🚀 Démarrer les conteneurs 
 
 ```bash
 pct start 200
