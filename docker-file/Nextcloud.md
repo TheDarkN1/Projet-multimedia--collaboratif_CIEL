@@ -103,8 +103,6 @@ docker compose up -d
 
 ## ⚡ Redis (cache + verrouillage)
 
-:contentReference[oaicite:0]{index=0} sert de **mémoire rapide (cache)** pour Nextcloud.
-
 ### 🧠 Rôle principal
 
 - 🚀 Accélère Nextcloud (moins de requêtes à la base de données)
@@ -125,7 +123,6 @@ docker compose up -d
 
 ## ⏱️ Cron (tâches automatiques)
 
-:contentReference[oaicite:1]{index=1} permet d’exécuter automatiquement des tâches planifiées.
 
 ### 🧠 Rôle principal dans Nextcloud
 
