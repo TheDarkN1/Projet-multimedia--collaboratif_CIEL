@@ -14,56 +14,57 @@ La commande `cat` associée à `EOF` permet d'écrire automatiquement le contenu
 
 cat > docker-compose.yml << 'EOF'
 services:
-  mariadb:
+  db:
     image: mariadb:11
     container_name: nextcloud-db
-    restart: unless-stopped
+    restart: always
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
-    environment:
-      MYSQL_ROOT_PASSWORD: Le-mot-de-passe-root
-      MYSQL_DATABASE: nextcloud
-      MYSQL_USER: nextcloud
-      MYSQL_PASSWORD: Le-mot-de-passe-user_nextcloud
     volumes:
-      - ./mariadb:/var/lib/mysql
+      - db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
 
   redis:
-    image: redis:7-alpine
+    image: redis:alpine
     container_name: nextcloud-redis
-    restart: unless-stopped
-    volumes:
-      - ./redis:/data
+    restart: always
 
-  nextcloud:
+  app:
     image: nextcloud:latest
-    container_name: nextcloud
-    restart: unless-stopped
-    depends_on:
-      - mariadb
-      - redis
+    container_name: nextcloud-app
+    restart: always
     ports:
-      - "8080:80"
-    environment:
-      MYSQL_DATABASE: nextcloud
-      MYSQL_USER: nextcloud
-      MYSQL_PASSWORD: Le-mot-de-passe-user_nextcloud
-      MYSQL_HOST: mariadb
-      REDIS_HOST: redis
-      PHP_MEMORY_LIMIT: 1024M
-      PHP_UPLOAD_LIMIT: 16G
+      - 8080:80
+    depends_on:
+      - db
+      - redis
     volumes:
-      - ./nextcloud:/var/www/html
+      - nextcloud:/var/www/html
+      - /mnt/nextcloud-data:/var/www/html/data
+    environment:
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_HOST=db
 
   cron:
     image: nextcloud:latest
     container_name: nextcloud-cron
-    restart: unless-stopped
-    depends_on:
-      - mariadb
-      - redis
-    entrypoint: /cron.sh
+    restart: always
     volumes:
-      - ./nextcloud:/var/www/html
+      - nextcloud:/var/www/html
+      - /mnt/nextcloud-data:/var/www/html/data
+    entrypoint: /cron.sh
+    depends_on:
+      - db
+      - redis
+
+volumes:
+  db:
+  nextcloud:
 
 EOF
 
