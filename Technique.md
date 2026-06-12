@@ -128,30 +128,6 @@ mount /dev/`nom du disque` /mnt/`nom du dossier`
 
 ---
 
-## 🧠 Exemple d’utilisation dans Docker Compose
-
-### Nextcloud
-
-```yaml
-volumes:
-  - /mnt/nextcloud-data:/var/www/html
-```
-
-### Jellyfin
-
-```yaml
-volumes:
-  - /mnt/media:/media
-```
-
-### Calibre
-
-```yaml
-volumes:
-  - /mnt/books:/books
-```
-
----
 
 
 
