@@ -43,14 +43,14 @@ MYSQL_USER: nextcloud
 MYSQL_PASSWORD: Le-mot-de-passe-use_nextcloud
 MYSQL_HOST: mariadb
 
-```
+
   REDIS_HOST: redis
 
   PHP_MEMORY_LIMIT: 1024M
   PHP_UPLOAD_LIMIT: 16G
 volumes:
   - ./nextcloud:/var/www/html
-```
+
 
 cron:
 image: nextcloud:latest
