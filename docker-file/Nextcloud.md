@@ -69,8 +69,17 @@ services:
 EOF
 
 ```
-### Pour Verifier si la configuration est bonne
+### ✅ Vérification de la configuration
+
+Avant de lancer les conteneurs, on peut vérifier que le fichier `docker-compose.yml` est valide :
+
 
 ```bash
 docker compose config
+```
+
+### 🚀 Lancement des conteneurs
+
+```bash
+docker compose up -d
 ```
