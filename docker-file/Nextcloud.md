@@ -1,9 +1,13 @@
 ## 🐳 Docker Compose Nextcloud
 
+### 📁 Création du répertoire de travail
+
 ```bash
 mkdir -p /opt/Nextcloud 
 cd /opt/Nextcloud
 ```
+
+### cat et EOF vont mettre le contenue dans ` docker-compose.yml `
 
 ```bash
 
@@ -62,4 +66,9 @@ services:
 
 EOF
 
+```
+###Pour Verifier si la configuration est bonne
+
+```bash
+docker compose config
 ```
