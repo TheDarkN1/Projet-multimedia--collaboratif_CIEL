@@ -120,7 +120,7 @@ mkfs.ext4 /dev/sdb1
 
 
 
-## 🔗 Montage du disque (exemple)
+## 🔗 Montage du disque (exemple enlever les `)
 
 ```bash
 mount /dev/`nom du disque` /mnt/`nom du dossier`
