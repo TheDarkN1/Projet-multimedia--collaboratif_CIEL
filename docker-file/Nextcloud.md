@@ -7,7 +7,9 @@ mkdir -p /opt/Nextcloud
 cd /opt/Nextcloud
 ```
 
-### cat et EOF vont mettre le contenue dans ` docker-compose.yml `
+### 📝 Création automatique du fichier `docker-compose.yml`
+
+La commande `cat` associée à `EOF` permet d'écrire automatiquement le contenu dans le fichier `docker-compose.yml` sans avoir à l'éditer manuellement avec un éditeur de texte.
 
 ```bash
 
