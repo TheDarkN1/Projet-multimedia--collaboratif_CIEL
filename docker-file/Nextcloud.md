@@ -1,6 +1,6 @@
 ## 🐳 Docker Compose Nextcloud
 
-### 📁 Création du répertoire de travail
+### 📁 Se placer dans le répertoire de travail
 
 ```bash
 mkdir -p /opt/Nextcloud 
