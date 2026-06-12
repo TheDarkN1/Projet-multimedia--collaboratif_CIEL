@@ -96,3 +96,34 @@ docker compose config
 ```bash
 docker compose up -d
 ```
+
+## Explication de Redis et de Cron
+
+###⚡ Redis (cache + verrouillage)
+
+Redis sert de mémoire rapide (cache) pour Nextcloud.
+
+🧠 À quoi ça sert concrètement :
+🚀 Accélère le site (moins de requêtes à la base de données)
+🔒 Gère le verrouillage des fichiers (file locking)
+📉 Réduit la charge sur MariaDB
+⚡ Rend l’interface plus fluide
+
+Sans Redis :
+Nextcloud devient plus lent
+Risque de conflits si plusieurs accès au même fichier
+Avec Redis :
+Cache des données temporaires
+Verrouillage propre des fichiers
+Meilleure stabilité en multi-utilisateurs
+
+###⏱️ Cron (tâches automatiques)
+
+cron sert à exécuter des tâches planifiées automatiquement.
+
+🧠 Dans Nextcloud, ça sert à :
+📤 Envoyer les notifications
+🧹 Nettoyer les fichiers temporaires
+🔄 Mettre à jour les index de fichiers
+📧 Gérer les mails internes
+🗂️ Scanner les nouveaux fichiers
