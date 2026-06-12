@@ -112,9 +112,9 @@ mkfs.ext4 /dev/sdb1
 
 | Service     | Dossier de montage        | Commande de création de dossier                  |
 |-------------|---------------------------|--------------------------------------------------|
-| ☁️ Nextcloud | /mnt/nextcloud           | `mkdir -p /mnt/nextcloud`                        |
-| 🎬 Jellyfin  | /mnt/jellyfin            | `mkdir -p /mnt/jellyfin`                         |
-| 📚 Calibre   | /mnt/calibre             | `mkdir -p /mnt/calibre`                          |
+| ☁️ Nextcloud | /mnt/nextcloud           | `mkdir -p /mnt/nextcloud-data`                   |
+| 🎬 Jellyfin  | /mnt/jellyfin            | `mkdir -p /mnt/media`                            |
+| 📚 Calibre   | /mnt/calibre             | `mkdir -p /mnt/books`                            |
 
 ---
 
@@ -123,7 +123,7 @@ mkfs.ext4 /dev/sdb1
 ## 🔗 Montage du disque (exemple)
 
 ```bash
-mount /dev/sdb1 /mnt/data
+mount /dev/`nom du disque` /mnt/`nom du dossier`
 ```
 
 ---
@@ -134,21 +134,21 @@ mount /dev/sdb1 /mnt/data
 
 ```yaml
 volumes:
-  - /mnt/nextcloud:/var/www/html
+  - /mnt/nextcloud-data:/var/www/html
 ```
 
 ### Jellyfin
 
 ```yaml
 volumes:
-  - /mnt/jellyfin:/media
+  - /mnt/media:/media
 ```
 
 ### Calibre
 
 ```yaml
 volumes:
-  - /mnt/calibre:/books
+  - /mnt/books:/books
 ```
 
 ---
