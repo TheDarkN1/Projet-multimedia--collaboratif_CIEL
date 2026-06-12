@@ -69,7 +69,7 @@ services:
 EOF
 
 ```
-###Pour Verifier si la configuration est bonne
+### Pour Verifier si la configuration est bonne
 
 ```bash
 docker compose config
