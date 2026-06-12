@@ -3,7 +3,6 @@
 ### 📁 Se placer dans le répertoire de travail
 
 ```bash
-mkdir -p /opt/Nextcloud 
 cd /opt/Nextcloud
 ```
 
