@@ -63,6 +63,59 @@ mkdir -p /opt/OnlyOffice
 cd /opt/OnlyOffice
 ```
 
+
+## Création des dossier donnée
+
+## 💾 Montage des disque pour Nextcloud, Jellyfin, Calibre et OnlyOffice
+
+---
+
+## 🔍 1. Identifier le disque
+
+Lister les disques disponibles :
+
+```bash
+lsblk
+```
+
+ou :
+
+```bash
+fdisk -l
+```
+
+👉 Exemple : `/dev/sdb`
+
+---
+
+## 🧱 2. Créer une partition (si disque neuf)
+
+```bash
+fdisk /dev/sdb
+```
+
+Puis :
+- `n` → nouvelle partition
+- `w` → sauvegarder
+
+---
+
+## 🧬 3. Formater le disque
+
+⚠️ Cette commande supprime toutes les données
+
+```bash
+mkfs.ext4 /dev/sdb1
+```
+
+---
+
+## 📁 4. Créer le point de montage
+
+
+
+
+
 ## 🚀 Déploiement des services
 
 - 📖 [Déploiement de Nextcloud](docker-file/Nextcloud.md)
