@@ -26,7 +26,8 @@ services:
     ports:
       - 8083:8083
     restart: unless-stopped
-EOF```
+EOF
+```
 
 ### ✅ Vérification de la configuration
 
