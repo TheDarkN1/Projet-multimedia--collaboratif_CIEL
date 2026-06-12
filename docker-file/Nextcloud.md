@@ -69,6 +69,19 @@ volumes:
 EOF
 
 ```
+
+### 📄 Création du fichier `.env` (identifiants et variables)
+
+On crée un fichier `.env` pour stocker les identifiants et variables sensibles séparément du `docker-compose.yml` :
+
+```bash
+cat > .env << 'EOF'
+MYSQL_ROOT_PASSWORD=mot_de_passe_root
+MYSQL_DATABASE=nextcloud
+MYSQL_USER=nextcloud
+MYSQL_PASSWORD=mot_de_passe_user
+EOF
+```
 ### ✅ Vérification de la configuration
 
 Avant de lancer les conteneurs, on peut vérifier que le fichier `docker-compose.yml` est valide :
