@@ -97,33 +97,49 @@ docker compose config
 docker compose up -d
 ```
 
-## Explication de Redis et de Cron
+## ⚙️ Explication de Redis et Cron
 
-###⚡ Redis (cache + verrouillage)
+---
 
-Redis sert de mémoire rapide (cache) pour Nextcloud.
+## ⚡ Redis (cache + verrouillage)
 
-🧠 À quoi ça sert concrètement :
-🚀 Accélère le site (moins de requêtes à la base de données)
-🔒 Gère le verrouillage des fichiers (file locking)
-📉 Réduit la charge sur MariaDB
-⚡ Rend l’interface plus fluide
+:contentReference[oaicite:0]{index=0} sert de **mémoire rapide (cache)** pour Nextcloud.
 
-Sans Redis :
-Nextcloud devient plus lent
-Risque de conflits si plusieurs accès au même fichier
-Avec Redis :
-Cache des données temporaires
-Verrouillage propre des fichiers
-Meilleure stabilité en multi-utilisateurs
+### 🧠 Rôle principal
 
-###⏱️ Cron (tâches automatiques)
+- 🚀 Accélère Nextcloud (moins de requêtes à la base de données)
+- 🔒 Gère le verrouillage des fichiers (file locking)
+- 📉 Réduit la charge sur MariaDB
+- ⚡ Améliore la fluidité globale de l’interface
 
-cron sert à exécuter des tâches planifiées automatiquement.
+### ❌ Sans Redis
+- Nextcloud plus lent
+- Risque de conflits lors d’accès simultanés aux fichiers
 
-🧠 Dans Nextcloud, ça sert à :
-📤 Envoyer les notifications
-🧹 Nettoyer les fichiers temporaires
-🔄 Mettre à jour les index de fichiers
-📧 Gérer les mails internes
-🗂️ Scanner les nouveaux fichiers
+### ✅ Avec Redis
+- Cache des données temporaires
+- Verrouillage des fichiers plus fiable
+- Meilleure stabilité en multi-utilisateurs
+
+---
+
+## ⏱️ Cron (tâches automatiques)
+
+:contentReference[oaicite:1]{index=1} permet d’exécuter automatiquement des tâches planifiées.
+
+### 🧠 Rôle principal dans Nextcloud
+
+- 📤 Envoi des notifications
+- 🧹 Nettoyage des fichiers temporaires
+- 🔄 Mise à jour des index de fichiers
+- 📧 Gestion des tâches email internes
+- 🗂️ Scan automatique des nouveaux fichiers
+
+---
+
+## 🔥 Résumé
+
+| Service | Rôle | Impact |
+|--------|------|--------|
+| Redis | Cache + verrouillage | 🚀 Performance + stabilité |
+| Cron | Tâches planifiées | ⚙️ Maintenance automatique |
