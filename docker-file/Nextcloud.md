@@ -1,4 +1,4 @@
-## 🐳 Docker Compose Nextcloud
+## Installation de Nextcloud
 
 ### 📁 Se placer dans le répertoire de travail
 
