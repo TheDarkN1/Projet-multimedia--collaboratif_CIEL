@@ -37,11 +37,14 @@ Outil de supervision permettant de vérifier la disponibilité des différents s
 
 ## 🎯 Objectifs du projet
 
-- Centraliser plusieurs services sur une même infrastructure (Proxmox)
-- Faciliter l'accès aux contenus numériques
-- Permettre le partage sécurisé des fichiers
-- Favoriser le travail collaboratif
-- Découvrir les technologies d'auto-hébergement
+- Centraliser les données sur un serveur unique.
+- Permettre l’accès distant aux fichiers et services.
+- Faciliter le partage et la collaboration.
+- Héberger des contenus multimédias et des documents.
+- Sécuriser les données et les accès.
+- Assurer la supervision du système et des services.
+- Développer des compétences en administration système et réseau.
+- Concevoir une infrastructure évolutive et autonome.
 
 ---
 
@@ -49,11 +52,11 @@ Outil de supervision permettant de vérifier la disponibilité des différents s
 
 Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
-- Authentification des utilisateurs
-- Accès sécurisé via HTTPS
-- Reverse proxy (Nginix Proxy Manager)
-- Gestion des droits d'accès
-- Sauvegarde des données importantes
+- Authentification des utilisateurs.
+- Accès sécurisé via HTTPS.
+- Reverse proxy (Nginix Proxy Manager).
+- Gestion des droits d'accès.
+- Sauvegarde des données.
 
 ---
 
@@ -76,15 +79,17 @@ Plusieurs mesures sont mises en place afin de protéger l'accès aux services :
 
 ---
 
-## 🛠️ Technologies utilisées
+## 🛠️ Solutions utilisées
 
 - 🖥️ Proxmox
+- 💻 Debian
 - 🐳 Docker
 - ☁️ Nextcloud
 - 🎥 Jellyfin
 - 📚 Calibre-Web
 - 📝 OnlyOffice
 - 📊 Uptime Kuma
+- 🌍 Nginx Proxy Manager
 
 ---
 
