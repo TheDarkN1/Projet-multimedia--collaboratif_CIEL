@@ -64,8 +64,6 @@ cd /opt/OnlyOffice
 ```
 
 
-## Création des dossier donnée
-
 ## 💾 Montage des disque pour Nextcloud, Jellyfin, Calibre et OnlyOffice
 
 ---
@@ -110,8 +108,58 @@ mkfs.ext4 /dev/sdb1
 
 ---
 
-## 📁 4. Créer le point de montage
+## 📁 Organisation des services et points de montage
 
+| Service     | Dossier de montage        | Commande Docker (volume)                          |
+|------------|---------------------------|---------------------------------------------------|
+| ☁️ Nextcloud | /mnt/nextcloud           | `- /mnt/nextcloud:/var/www/html`                 |
+| 🎬 Jellyfin  | /mnt/jellyfin            | `- /mnt/jellyfin:/media`                         |
+| 📚 Calibre   | /mnt/calibre             | `- /mnt/calibre:/books`                          |
+
+---
+
+## 💾 Création des dossiers
+
+```bash
+mkdir -p /mnt/nextcloud
+mkdir -p /mnt/jellyfin
+mkdir -p /mnt/calibre
+```
+
+---
+
+## 🔗 Montage du disque (exemple)
+
+```bash
+mount /dev/sdb1 /mnt/data
+```
+
+---
+
+## 🧠 Exemple d’utilisation dans Docker Compose
+
+### Nextcloud
+
+```yaml
+volumes:
+  - /mnt/nextcloud:/var/www/html
+```
+
+### Jellyfin
+
+```yaml
+volumes:
+  - /mnt/jellyfin:/media
+```
+
+### Calibre
+
+```yaml
+volumes:
+  - /mnt/calibre:/books
+```
+
+---
 
 
 
