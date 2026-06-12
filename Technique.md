@@ -108,25 +108,17 @@ mkfs.ext4 /dev/sdb1
 
 ---
 
-## 📁 Organisation des services et points de montage
+## 📁 Organisation des services et création des dossiers
 
-| Service     | Dossier de montage        | Commande Docker (volume)                          |
-|------------|---------------------------|---------------------------------------------------|
-| ☁️ Nextcloud | /mnt/nextcloud           | `- /mnt/nextcloud:/var/www/html`                 |
-| 🎬 Jellyfin  | /mnt/jellyfin            | `- /mnt/jellyfin:/media`                         |
-| 📚 Calibre   | /mnt/calibre             | `- /mnt/calibre:/books`                          |
-
----
-
-## 💾 Création des dossiers
-
-```bash
-mkdir -p /mnt/nextcloud
-mkdir -p /mnt/jellyfin
-mkdir -p /mnt/calibre
-```
+| Service     | Dossier de montage        | Commande de création de dossier                  |
+|-------------|---------------------------|--------------------------------------------------|
+| ☁️ Nextcloud | /mnt/nextcloud           | `mkdir -p /mnt/nextcloud`                        |
+| 🎬 Jellyfin  | /mnt/jellyfin            | `mkdir -p /mnt/jellyfin`                         |
+| 📚 Calibre   | /mnt/calibre             | `mkdir -p /mnt/calibre`                          |
 
 ---
+
+
 
 ## 🔗 Montage du disque (exemple)
 
