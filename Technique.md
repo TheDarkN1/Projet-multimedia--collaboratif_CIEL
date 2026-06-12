@@ -5,7 +5,6 @@
 # 📝 Notes : Les dossiers contenant les médias utilisés par Jellyfin, Calibre-Web et Nextcloud, la mise en place sera détaillés dans la section ` Stockage `
 
 - 📖 [Présentation du projet](README.md)
-- 🛠️ [Partie Technique](Technique.md)
 - 📁 [Stockage](Stockage.md)
 
 #### Installation de Docker
