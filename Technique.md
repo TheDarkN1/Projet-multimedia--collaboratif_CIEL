@@ -171,8 +171,8 @@ volumes:
 
 Créer deux conteneurs LXC sous Proxmox pour héberger :
 
-- 📡 :contentReference[oaicite:0]{index=0} → monitoring des services
-- 🌐 :contentReference[oaicite:1]{index=1} → reverse proxy et gestion des accès
+- 📡 UptimeKuma → monitoring des services
+- 🌐 Nginx      → reverse proxy et gestion des accès
 
 ---
 
@@ -208,7 +208,7 @@ pct create 201 local:vztmpl/debian-12-standard_*.tar.zst \
 
 ---
 
-## 🚀 Démarrer les conteneurs
+## 🚀 Démarrer les conteneurs (dans le shell de proxmox ou dans l'interface web)
 
 ```bash
 pct start 200
