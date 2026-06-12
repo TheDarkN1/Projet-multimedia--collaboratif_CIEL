@@ -2,10 +2,9 @@
 
 ## 🖥️ Préparation de l'infrastructure pour toutes les VMs
 
-# 📝 Notes : Les dossiers contenant les médias utilisés par Jellyfin, Calibre-Web et Nextcloud, la mise en place sera détaillés dans la section ` Stockage `
+
 
 - 📖 [Présentation du projet](README.md)
-- 📁 [Stockage](Stockage.md)
 
 #### Installation de Docker
 
