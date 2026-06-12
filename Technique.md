@@ -64,8 +64,7 @@ mkdir -p /opt/OnlyOffice
 cd /opt/OnlyOffice
 ```
 
-## Déploiement avec Docker Compose 
-
+## 🚀 Déploiement des services
 
 - 📖 [Déploiement de Nextcloud](docker-file/Nextcloud.md)
 - 🛠️ [Déploiement de Calibre](Technique.md)
