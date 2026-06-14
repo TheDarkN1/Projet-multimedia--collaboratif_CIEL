@@ -64,7 +64,7 @@ cd /opt/OnlyOffice
 ```
 
 
-## 💾 Montage des disque pour Nextcloud, Jellyfin, Calibre et OnlyOffice
+## 💾 Montage des disque pour Nextcloud, Jellyfin et Calibre 
 
 ---
 
